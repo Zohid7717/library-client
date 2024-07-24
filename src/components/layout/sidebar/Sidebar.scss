@@ -1,0 +1,43 @@
+.sidebar {
+  max-width: 306px;
+  padding: clamp(15px, 1.97vw, 38px) clamp(15px, 3.54vw, 68px);
+  background-color: #fff;
+
+  a {
+    display: block;
+  }
+
+  &__logo {
+    max-width: 120px;
+    max-height: 74.8px;
+
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  nav {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-top: 100px;
+    &>a {
+      display: inline-flex;
+      font-family: Inter;
+      font-size: 20px;
+      gap: 11px;
+      color: #8A8A8A;
+      & svg{
+        fill: #8A8A8A;
+      }
+    }
+    & .active{
+      color: #4D4D4D;
+      & svg{
+        fill: #4D4D4D;
+      }
+    }
+  }
+}

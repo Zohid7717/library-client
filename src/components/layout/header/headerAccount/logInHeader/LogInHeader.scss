@@ -1,0 +1,57 @@
+.header-account__login{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &>button{
+    padding: 3px 10px 3px 3px;
+    font-size: 20px;
+    color: #4D4D4D;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::after {
+      content: '';
+      width: 11px;
+      height: 7px;
+      background-image: url('/public/images/icon/Polygon.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+    }
+    & img{
+      max-width: 41px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+  }
+  
+}
+
+.header-account{
+  &__drop-down-list {
+    position: absolute;
+    overflow: hidden;
+    transform: scaleY(0);
+    z-index: 10;
+    top: calc(100% + 14px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #4D4D4D;
+    gap: 25px;
+    transform-origin: 50% 0%;
+    transition-property: box-shadow, border, transform;
+    transition-duration: 0.25s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out;
+    border: 1px solid transparent;
+  }
+
+  & .active {
+    transform: scaleY(1);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #ddd;
+  }
+}

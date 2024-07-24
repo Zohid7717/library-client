@@ -1,0 +1,20 @@
+{
+  "NavLink": {
+    "home": "Главная",
+    "search": "Поиск",
+    "my-shelf": "Моя полка",
+    "contribute": "Вклад"
+  },
+  "HeaderSearchCategories": {
+    "all": "Все",
+    "title": "Название",
+    "author": "Автор",
+    "category": "Категория"
+  },
+  "HeaderSearchInput": "Поиск",
+  "HeaderAccount": {
+    "logIn": "Вход",
+    "logOut": "Выход",
+    "profile": "Профиль"
+  }
+}

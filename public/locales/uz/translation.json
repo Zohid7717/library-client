@@ -1,0 +1,20 @@
+{
+  "NavLink": {
+    "home": "Bosh sahifa",
+    "search": "Izlash",
+    "my-shelf": "Javonim",
+    "contribute": "Homiylik"
+  },
+  "HeaderSearchCategories": {
+    "all": "Barcha",
+    "title": "Nomi",
+    "author": "Muallif",
+    "category": "Kategoriya"
+  },
+  "HeaderSearchInput": "Izlash",
+  "HeaderAccount": {
+    "logIn": "Kirish",
+    "logOut": "Chiqish",
+    "profile": "Profil"
+  }
+}

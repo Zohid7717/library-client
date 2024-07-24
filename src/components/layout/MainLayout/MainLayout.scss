@@ -1,0 +1,29 @@
+.main-layout{
+  display: grid;
+  grid-template-areas:
+    'sidebar header'
+    'sidebar main'
+  ;
+  grid-template-columns: 306px 1fr;
+  grid-template-rows: 110px 1fr;
+  background-color: #F3F3F7;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1850px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  header{
+    grid-area: header;
+    margin: clamp(15px, 1.9vw, 38px) clamp(15px, 2.32vw, 46px) clamp(15px, 1.26vw, 25px);
+  }
+  
+  main{
+    grid-area: main;
+    height: 100%;
+  }
+
+  aside{
+    grid-area: sidebar;
+  }
+}

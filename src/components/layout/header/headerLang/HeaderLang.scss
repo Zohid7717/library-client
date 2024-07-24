@@ -1,0 +1,58 @@
+.header-lang {
+  display: flex;
+  border-radius: 40px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+
+  &__drop-down {
+    border-radius: 40px;
+    
+    position: relative;
+    &>button {
+      padding: 13px ;
+      font-size: 20px;
+      position: relative;
+      color: #4D4D4D;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &::after {
+        content: '';
+        width: 11px;
+        height: 7px;
+        background-image: url('/public/images/icon/Polygon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+      }
+    }
+  }
+
+  &__drop-down-list {
+    position: absolute;
+    overflow: hidden;
+    transform: scaleY(0);
+    z-index: 10;
+    top: calc(100% + 14px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #4D4D4D;
+    gap: 25px;
+    transform-origin: 50% 0%;
+    transition-property: box-shadow, border, transform;
+    transition-duration: 0.25s, 0.2s, 0.2s;
+    transition-timing-function: ease-in-out;
+    border: 1px solid transparent;
+  }
+
+  & .active {
+    transform: scaleY(1);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #ddd;
+  }
+}

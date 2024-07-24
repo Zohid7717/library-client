@@ -1,0 +1,16 @@
+.header-account {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 40px;
+  &>button{
+    display: inline-flex;
+    gap: 10px;
+    border-radius: 40px;
+    color: #4D4D4D;
+    font-size: 20px;
+    padding: 13px;
+    &>img{
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+/*Подключения шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+  font-family: 'Digital Numbers Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Digital Numbers Regular'), url('./fonts/DigitalNumbers-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Liberation Sans Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Liberation Sans Bold'), url('./fonts/LiberationSans-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Sarabun Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sarabun Medium'), url('./fonts/Sarabun-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Lato Bold'), url('./fonts/Lato-Bold.woff2') format('woff2');
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a{
+  font-size: inherit;
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+body{
+  background-image: url('/public/images/img/Group\ 133546.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+}
+
+#root{
+  width: 100%;
+  padding: clamp(15px, 2.5vw, 48px) clamp(15px, 1.82vw, 35px);
+}
