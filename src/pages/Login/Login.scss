@@ -1,0 +1,52 @@
+.login{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #F3F3F7;
+  &__bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/images/img/Group\ 133546.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 81px 0;
+  }
+  &__card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: clamp(15px, 6.3vh, 63px) clamp(15px, 37vw, 71px) clamp(15px, 7.1vh, 85px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+  }
+  &__card-logo{
+    width: 150px;
+    height: 95px;
+    margin-bottom: 25px;
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__status{
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    color: #4D4D4D;
+    font-size: 16px;
+    width: 100%;
+    & button,
+    & a{
+      text-decoration: underline;
+    }
+  }
+}

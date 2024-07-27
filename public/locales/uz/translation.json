@@ -16,5 +16,30 @@
     "logIn": "Kirish",
     "logOut": "Chiqish",
     "profile": "Profil"
+  },
+  "LogIn": {
+    "Registration": "Ro‘yxatdan o‘tish",
+    "Authorization": "Avtorizatsiya",
+    "Use as Guest": "Mexmon sifatida"
+  },
+  "Authorization": {
+    "Welcome": "Xush kelibsiz!",
+    "registration": "Ro'yxatdan o`tish.",
+    "authorization": "Avtorizatssiya qilish.",
+    "Name": "Ismingiz",
+    "Name error": "Maydon lotin alifbosining 3 ta belgisidan kam bo`lmasligi kerak",
+    "Last-name": "Sharifingiz",
+    "User-passport": "Pasport belgisi",
+    "Password": "Parol",
+    "Password error": "Maydon kamida 1 ta kichik lotin alifbosi, 1 ta katta lotin alifbosi, 1 ta raqam va 1 ta (@$!%*?&) belgi qatnashgan 8 ta belgidan iborat bo`lishi kerak",
+    "Login": "Tizimga kirish",
+    "error empty input": "Maydon to`ldirilishi kerak",
+    "signup": "Ro`yxatdan o`tish",
+    "User-phone": "Telefon",
+    "User-phone-error": "Telefon raqami +998 dan keyin 9 ta raqamdan iborat bo'lishi kerak",
+    "User_photo":"Fotosuratingiz",
+    "User_photo error": "Surat tanlanmagan",
+    "auth-status-false": "Siz avtorizatsiya qilinmagansiz",
+    "auth-status-true": "Siz avtorizatsiya qilindingiz"
   }
 }
