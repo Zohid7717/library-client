@@ -1,0 +1,45 @@
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  gap: 10px;
+  &>button {
+    background-color: #FA7C54;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after,
+    &::before{
+      content: '';
+      width: 15px;
+      height: 2px;
+      background-color: #fff;
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 2.5px;
+    }
+    &::after{
+      transform: rotate(45deg);
+    }
+    &::before{
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.toast-container{
+  min-height: 0vh;
+}

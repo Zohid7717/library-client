@@ -1,0 +1,41 @@
+import axios, { AxiosError } from 'axios';
+
+// Обработчик формы с использованием handleSubmit
+const onSubmit = handleSubmit(async (data) => {
+  try {
+    if (aBookFile) {
+      const formData = new FormData();
+      formData.append('file', aBookFile, data.a_book_file);
+
+      await axios.post('/uploadBook/uploadBookFile', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      console.log('Файл успешно загружен');
+    }
+  } catch (error) {
+    // Проверяем, является ли ошибка экземпляром AxiosError
+    if (axios.isAxiosError(error)) {
+      const axiosError = error as AxiosError;
+
+      // Если сервер ответил с ошибкой (есть response)
+      if (axiosError.response) {
+        console.log('Ошибка на стороне сервера:', axiosError.response.data);  // данные от сервера
+        console.log('Статус ошибки:', axiosError.response.status);  // статус ошибки (500, 400 и т.д.)
+        console.log('Заголовки ошибки:', axiosError.response.headers);  // заголовки ответа
+      } else if (axiosError.request) {
+        // Ошибка с запросом (сервер не ответил)
+        console.log('Сервер не ответил:', axiosError.request);
+      } else {
+        // Другая ошибка, не связанная с запросом
+        console.log('Ошибка:', axiosError.message);
+      }
+    } else {
+      // Обработка других типов ошибок
+      console.log('Произошла ошибка:', error);
+    }
+  }
+  console.log(data);
+});

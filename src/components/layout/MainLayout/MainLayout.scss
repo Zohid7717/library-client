@@ -8,21 +8,33 @@
   grid-template-rows: 110px 1fr;
   background-color: #F3F3F7;
   border-radius: 10px;
-  overflow: hidden;
   max-width: 1850px;
   height: 100%;
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
   header{
     grid-area: header;
     margin: clamp(15px, 1.9vw, 38px) clamp(15px, 2.32vw, 46px) clamp(15px, 1.26vw, 25px);
   }
-  
   main{
     grid-area: main;
     height: 100%;
-  }
+    padding: 0 clamp(15px, 2.48vw, 46px) clamp(15px, 2.48vw, 46px);
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track{
+      background-color: bisque;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      background-color: #F27851;
+    }
 
+  }
   aside{
     grid-area: sidebar;
   }

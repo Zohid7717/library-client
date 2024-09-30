@@ -124,7 +124,7 @@ h6 {
 /*--------------------*/
 
 body{
-  background-image: url('/public/images/img/Group\ 133546.svg');
+  background-image: url('./assets/images/img/Group\ 133546.svg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -137,5 +137,7 @@ body{
 
 #root{
   width: 100%;
+  height: 100%;
   padding: clamp(15px, 2.5vw, 48px) clamp(15px, 1.82vw, 35px);
+  overflow: hidden;
 }

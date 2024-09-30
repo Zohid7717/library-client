@@ -1,6 +1,6 @@
 export type authUserReq = {
   user_passport: string,
-  user_password: string
+  user_pass: string
 }
 
 export type UserType = {
@@ -16,4 +16,14 @@ export type authUserRes = {
   success: boolean,
   user: UserType,
   token: string
+}
+
+export type AdminRegReq = {
+  user_firstname: string,
+  user_lastname: string,
+  user_passport: string,
+  user_number: string,
+  user_pass: string,
+  admin_pass: string,
+  user_img: string | null
 }

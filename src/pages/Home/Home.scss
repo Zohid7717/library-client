@@ -1,0 +1,7 @@
+.home{
+  padding: clamp(15px, 1.3vw, 25px) clamp(15px, 2.29vw, 44px);
+  &__header{
+    display: flex;
+    gap: clamp(15px, 2.29vw, 44px);
+  }
+}

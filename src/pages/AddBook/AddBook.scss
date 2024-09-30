@@ -1,0 +1,142 @@
+.add-book {
+  height: 100%;
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  font-family: Inter;
+  overflow-y: scroll;
+  gap: 20px;
+
+  & h2,
+  & h3 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__authors-input {
+    display: flex;
+    gap: 15px;
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Inter;
+      padding: 10px;
+      border: 1px solid #d6d6d6;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #F4683C;
+      }
+    }
+  }
+
+  &__authors-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+    & p {
+      border: 1px solid #d6d6d6;
+      padding: 7px;
+      & span:last-child {
+        font-weight: 500;
+        font-size: 16px;
+        font-family: Inter;
+        border: 1px solid #d6d6d6;
+        border-radius: 1px;
+        cursor: pointer;
+        transition: 0.5s;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin-left: 10px;
+        &:hover {
+          background-color: #F4683C;
+        }
+      }
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+  }
+
+  &__visible {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Inter;
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+
+    &::placeholder {
+      color: #A9A9A9A9;
+    }
+  }
+
+  & button {
+    font-weight: 600;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 12px;
+    color: #FFFFFF;
+    padding: 18px 70px;
+    background-color: #F4683C;
+    border-radius: 5px;
+    margin-top: 26px;
+    width: fit-content;
+  }
+
+  &__book-img {
+    font-size: 16px;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.form__wrap {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.form__input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__checkbox-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &>label {
+    display: inline-flex;
+    gap: 5px;
+    width: fit-content;
+    cursor: pointer;
+  }
+}
+
+label {
+  width: fit-content;
+}
+
+.form__checkbox-wrap-hbook {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  gap: 10px;
+}

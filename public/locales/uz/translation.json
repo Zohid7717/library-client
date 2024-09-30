@@ -3,7 +3,10 @@
     "home": "Bosh sahifa",
     "search": "Izlash",
     "my-shelf": "Javonim",
-    "contribute": "Homiylik"
+    "contribute": "Homiylik",
+    "users": "Foydalanuvchilar",
+    "books": "Kitoblar",
+    "quotes": "Iqtiboslar"
   },
   "HeaderSearchCategories": {
     "all": "Barcha",
@@ -40,6 +43,53 @@
     "User_photo":"Fotosuratingiz",
     "User_photo error": "Surat tanlanmagan",
     "auth-status-false": "Siz avtorizatsiya qilinmagansiz",
-    "auth-status-true": "Siz avtorizatsiya qilindingiz"
+    "auth-status-true": "Siz avtorizatsiya qilindingiz",
+    "admin-pass":"Administrator paroli"
+  },
+  "Home": {
+    "titles": {
+      "Recommended for You": "Sizga tavsiya etiladi",
+      "Popular": "Ommabop kitoblar",
+      "New Books": "Yangi Kitoblar",
+      "Today's Quote": "Kun Iqtibosi"
+    }
+  },
+  "admin":{
+    "addBook":{
+      "title": "Yangi kitob qo`shish",
+      "Fill up Book Details": "Kitob tafsilotlarini to'ldirish",
+      "Book name": "Kitob nomi",
+      "Author name":  "Avtor nomi",
+      "Book category": "Kitob kategotiyasi",
+      "Hard book": "Qog'oz nusxa",
+      "E book": "Elektron nusxa",
+      "Audio book": "Audio nusxa",
+      "Book language": "Kitob tili",
+      "Book quantity": "Kitoblar soni",
+      "Book location": "Kitobning joylashgan o`rni",
+      "Book fragment": "Kitobdan parcha kiriting",
+      "Book price": "Kitob narxi",
+      "Book image": "Kitob asosiy tasviri"
+    }
+  },
+  "book":{
+    "Go back": "Ortga qaytish",
+    "No data available": "Kitob topilmadi",
+    "Book rating": "Kitob reytingi",
+    "Your rating": "Siz bergan baho",
+    "Book format": "Kitob shakli",
+    "Book location": "Kitob o`rni",
+    "Expected": "Kutilayapdi",
+    "Price": "Narxi",
+    "Category": "Kategoriya",
+    "Language": "Kitob tili",
+    "Annotation": "Annotatsiya",
+    "Reviews": "Sharhlar",
+    "Download electronic copy": "Elektron nusxani yuklang",
+    "Download audio copy": "Audio nusxani yuklang",
+    "Add Review": "Sharh qo'shish",
+    "Empty review": "Siz birinchilardan sharh qoldirishingiz mumkin",
+    "Your review": "Sizning sharhingiz",
+    "Save": "Saqlash"
   }
 }

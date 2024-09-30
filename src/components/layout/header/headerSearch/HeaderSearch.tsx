@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import searchBtn from '../../../../../public/images/icon/search-icon.svg'
+import searchBtn from '../../../../assets/images/icon/search-icon.svg'
 import './HeaderSearch.scss'
 
 const HeaderSearch: FC = () => {

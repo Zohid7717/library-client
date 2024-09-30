@@ -3,7 +3,10 @@
     "home": "Главная",
     "search": "Поиск",
     "my-shelf": "Моя полка",
-    "contribute": "Вклад"
+    "contribute": "Вклад",
+    "users": "Пользователи",
+    "books": "Книги",
+    "quotes": "Цитаты"
   },
   "HeaderSearchCategories": {
     "all": "Все",
@@ -25,10 +28,11 @@
   "Authorization": {
     "Welcome": "Добро пожаловать!",
     "registration": "Регистрация.",
-    "authorization": "Авторизайия",
+    "authorization": "Авторизация",
     "Name": "Имя",
     "Name error": "Поля не должно быть меньше 3-х символов латинского алфавита.",
     "Last-name": "Фамилия",
+    "User-passport": "Серия паспорта",
     "Password": "Пароль",
     "Password error": "Поле должно содержать не менее 8 символов, включая 1 строчную латинский алфавит, 1 заглавную латинский алфавит, 1 цифру и 1 символ (@$!%*?&) символ.",
     "Login": "Авторизоваться",
@@ -38,6 +42,53 @@
     "User-phone-error": "Номер телефона должен состоять из 9 цифр после +998.",
     "User_photo": "Фотография",
     "auth-status-false": "Вы не авторизованы",
-    "auth-status-true": "Вы авторизованы"
+    "auth-status-true": "Вы авторизованы",
+    "admin-pass": "Пароль администратора"
+  },
+  "Home": {
+    "titles": {
+      "Recommended for You": "Рекомендуется для вас",
+      "Popular": "Популярные книги",
+      "New Books": "Новые Книги",
+      "Today's Quote": "Цитата дня"
+    }
+  },
+  "admin":{
+    "addBook":{
+      "title": "Добавить книгу",
+      "Fill up Book Details": "Заполните данные о книге",
+      "Book name": "Название книги",
+      "Author name": "Имя автора",
+      "Book category": "Категория книги",
+      "Hard book": "Бумажная копия",
+      "E book": "Электронная копия",
+      "Audio book": "Аудио копия",
+      "Book language": "Язык книги",
+      "Book quantity": "Количество книг",
+      "Book location": "Место нахождения книги",
+      "Book fragment": "Введите фрагмент из книги",
+      "Book price": "Введите стоимость книги",
+      "Book image": "Основное изображение книги"
+    }
+  },
+  "book":{
+    "Go back": "Назад",
+    "No data available": "Книга не найдена",
+    "Book rating": "Рейтинг книги",
+    "Your rating": "Ваша оценка",
+    "Book format": "Формат книги",
+    "Book location": "Расположения книги",
+    "Expected": "Ожидается",
+    "Price": "Цена",
+    "Category": "Категория",
+    "Language": "Язык книги",
+    "Annotation": "Аннотация",
+    "Reviews": "Отзывы",
+    "Download electronic copy": "Скачать электронную копию",
+    "Download audio copy": "Скачать аудио копию",
+    "Add Review": "Добавить отзыв",
+    "Empty review": "Вы можете первым оставить отзыв",
+    "Your review": "Ваш отзыв",
+    "Save": "Сохранить"
   }
 }

@@ -1,0 +1,37 @@
+.book-func{
+  margin-top: 15px;
+  &__links{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    & li{
+      font-weight: 500;
+      color: #666666;
+      font-size: 13px;
+      line-height: 19.5px;
+      cursor: pointer;
+      padding: 10px 15px;
+    }
+    .active-link{
+      color: #F27851;
+      border-bottom: 1.5px solid #F27851;
+    }
+  }
+}
+.func-container{
+  margin-top: 15px;
+  padding: 29px 40px;
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  & h2{
+    font-weight: 600;
+    font-size: 22px;
+  }
+  & p{
+    color: #4D4D4D;
+    margin-top: 22px;
+    font-size: 13px;
+    line-height: 150%;
+  }
+}

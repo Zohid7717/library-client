@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
-import translateIcon from '../../../../../public/images/icon/Translate.svg'
+import translateIcon from '../../../../assets/images/icon/Translate.svg'
 import './HeaderLang.scss'
 
 
@@ -13,8 +13,6 @@ const HeaderLang: FC = () => {
       setSelectMenu(false)
     }
   }
-
-  
 
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside)

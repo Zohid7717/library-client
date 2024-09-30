@@ -1,8 +1,10 @@
 import { FC, useEffect, useRef, useState } from 'react'
-import userIcon from '../../../../../../public/images/icon/user-ison.svg'
+import userIcon from '../../../../../assets/images/icon/user-ison.svg'
 import './LogInHeader.scss'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import { useAppDispatch } from '../../../../../server/redux/hooks'
+import { logOut } from '../../../../../server/redux/userSlice/userSlice'
 
 const LogInHeader: FC = () => {
   const userImg: string | null = null
@@ -13,6 +15,7 @@ const LogInHeader: FC = () => {
       setSelectMenu(false)
     }
   }
+  const dispatch = useAppDispatch()
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside)
     return () => {
@@ -34,7 +37,7 @@ const LogInHeader: FC = () => {
       <Link to='/profile'>
         {t("HeaderAccount.profile")}
       </Link>
-      <button>
+      <button onClick={() => dispatch(logOut())}>
         {t("HeaderAccount.logOut")}
       </button>
     </div>

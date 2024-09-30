@@ -1,10 +1,11 @@
-import { ChangeEvent, FC, useState } from 'react'
+import { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useForm } from 'react-hook-form'
 import eyeOff from "../../../../public/images/icon/eye-off.svg";
 import eyeOn from "../../../../public/images/icon/eye-on.svg";
 import './AuthModal.scss'
 import axios from '../../../server/axios/axios';
+import { handleFileChange } from '../../../components/utils/helperFuntions';
 
 const AuthModal: FC = () => {
   const [inputType, setInputType] = useState<string>('password')
@@ -34,7 +35,6 @@ const AuthModal: FC = () => {
         ...data,
         user_img: imageName
       }
-      console.log(formData)
       await axios.post('/users/regUser', formData, {
         headers: {
           'Content-Type': 'application/json'
@@ -44,23 +44,7 @@ const AuthModal: FC = () => {
       console.error(error)
     }
   })
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      const file = e.target.files[0]
-      const render = new FileReader()
-      render.onloadend = () => {
-        setPreviewImg(render.result)
-      }
-      render.readAsDataURL(file)
-      setUserImg(file)
-      const fileNameParts = file.name.split('.')
-      setImageName(`${fileNameParts[0]}_${Date.now()}.${fileNameParts[1]}`)
 
-      // const newFile = e.target.files[0]
-      // setUserImg(new File([newFile], imageName, { type: newFile.type }))
-      // setPreviewImg(URL.createObjectURL(newFile))
-    }
-  }
   return <div className='auth-modal'>
     <h2>{t("Authorization.Welcome")}</h2>
     <h3>{t("Authorization.registration")}</h3>
@@ -100,7 +84,7 @@ const AuthModal: FC = () => {
           <p>{t("Authorization.User-passport")}</p>
           <input
             type="text"
-            placeholder={t("Authorization.Last-name")}
+            placeholder={t("Authorization.User-passport")}
             {...register('user_passport', {
               required: t("Authorization.error empty input"),
             })}
@@ -141,12 +125,12 @@ const AuthModal: FC = () => {
             />
             {
               inputType === 'password' ?
-                <button onClick={() => setInputType('text')}>
+                <div className='eye-btn' onClick={() => setInputType('text')}>
                   <img src={eyeOff} alt="eye" />
-                </button> :
-                <button onClick={() => setInputType('password')}>
+                </div> :
+                <div className='eye-btn' onClick={() => setInputType('password')}>
                   <img src={eyeOn} alt="eye" />
-                </button>
+                </div>
             }
           </div>
           {errors?.user_pass && <p className='form-error'>{String(errors.user_pass.message)}</p>}
@@ -160,7 +144,7 @@ const AuthModal: FC = () => {
           {...register('user_img', {
             required: t("Authorization.error empty input")
           })}
-          onChange={handleFileChange}
+          onChange={(e)=> handleFileChange(e, setPreviewImg,  setImageName, setUserImg)}
         />
         <div >
           {typeof (previewImg) === 'string' ?

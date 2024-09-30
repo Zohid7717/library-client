@@ -1,0 +1,44 @@
+.reviews {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    & div {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #D6D6D6;
+      padding: 10px;
+      gap: 15px;
+      & cite{
+        text-align: right;
+      }
+    }
+  }
+  & form{
+    display: flex;
+    flex-direction: column;
+    & textarea{
+      margin-top: 11px;
+      border: 1px solid #D6D6D6;
+      border-radius: 5px;
+      padding: 18px;
+      font-size: 16px;
+      &::placeholder{
+        color: #A9A9A9;
+      }
+    }
+    & button {
+      font-weight: 600;
+      font-family: Inter;
+      font-size: 20px;
+      line-height: 12px;
+      color: #FFFFFF;
+      padding: 18px 70px;
+      background-color: #F4683C;
+      border-radius: 5px;
+      margin-top: 26px;
+      width: fit-content;
+    }
+  }
+}
